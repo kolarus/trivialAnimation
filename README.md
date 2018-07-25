@@ -9,3 +9,5 @@ Create animation similar to the gif (img/animation.gif)
 ```Output
 Similar animation with some simple configuration abilities
 ```
+
+https://kolarus.github.io/trivialAnimation/
