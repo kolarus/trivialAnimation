@@ -1,0 +1,24 @@
+/* You can even try to configure $circle-size here, but i want declare it is an official option =) */
+/*Circles*/
+$circles-size: 100px; /* <-- size */
+$animation-iteration-time: .5s; /* <-- speed */
+$circles-margin: 5px;
+$circles-border-width: $circles-size/10;
+$animation-container-width: ($circles-margin*12) +($circles-size*3);
+$animation-container-height: ($circles-size+$circles-margin*2) + ($circles-size*0.3);
+
+/*Colors*/
+$oxford-blue: #333b4d;
+$lochmara: #0084c6;
+$swamp: #000101;
+$monza: #de0024;
+$green-haze: #009d3d;
+$amber: #f3c200;
+$white: #fefefe;
+/*Color matrix */
+$body-bg: $oxford-blue;
+$circle-blue: $lochmara;
+$circle-black: $swamp;
+$circle-red: $monza;
+$circle-yellow: $amber;
+$circle-green: $green-haze;

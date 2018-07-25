@@ -1,0 +1,69 @@
+@import 'vars';
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $body-bg;
+}
+
+.animation {
+  display: flex;
+  position: relative;
+  transform: translateY(-100px);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: $animation-container-width;
+  height: 200px;
+  &__bottom-row {
+    top: 43%
+  }
+  &__bottom-row,
+  &__top-row {
+    position: absolute;
+    display: flex;
+  }
+  &__circle {
+    margin: $circles-margin;
+    width: $circles-size;
+    height: $circles-size;
+    border-radius: 50%;
+    border: $circles-border-width solid black;
+    box-sizing: border-box;
+    animation: linear $animation-iteration-time rotate infinite;
+    &--blue {
+      border-color: $circle-blue;
+      border-top: $circles-border-width solid $white;
+    }
+    &--black {
+      border-color: $circle-black;
+      border-right: $circles-border-width solid $white;
+    }
+    &--red {
+      border-color: $circle-red;
+      border-bottom: $circles-border-width solid $white;
+    }
+    &--yellow {
+      border-color: $circle-yellow;
+      border-left: $circles-border-width solid $white;
+    }
+    &--green {
+      border-color: $circle-green;
+      border-right: $circles-border-width solid $white;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
